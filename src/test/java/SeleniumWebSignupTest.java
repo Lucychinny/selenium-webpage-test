@@ -101,7 +101,7 @@ public class SeleniumWebSignupTest {
     @Test(priority = 4)
     public  void negativeSignupEmail() throws InterruptedException{
         //Verify that user can not signup with username less 3 char
-        webDriver.findElement(By.id("user_username")).sendKeys("Lude3");
+        webDriver.findElement(By.id("user_username")).sendKeys("Lude6");
         webDriver.findElement(By.id("user_email")).clear();
         webDriver.findElement(By.id("user_email")).sendKeys("azainvalud");
         webDriver.findElement(By.id("user_password")).sendKeys("@Password29");
